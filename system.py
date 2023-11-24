@@ -268,6 +268,7 @@ class SYSTEM():
         else:
             self.label_warning.config(text="Check the turn or the input!")
     
+    # 머신 턴. user_go와 동일 코드
     def machine_go(self):
         self.machine.score = self.score
         self.machine.drawn_lines = self.drawn_lines
@@ -301,6 +302,7 @@ class SYSTEM():
         else:
             self.label_warning.config(text="Check the turn \nor the machine error!")
 
+    # Check the condition to draw line
     def check_availability(self, turn, line):
         line_string = LineString(line)
 
